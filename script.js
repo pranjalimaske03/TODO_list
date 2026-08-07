@@ -332,5 +332,25 @@ let tasks = {
   // Filtering data based on Search query.
   
   const search = document.getElementById("search-input");
+
+    // Function for showing the tasks according to the search query.
+  search.addEventListener("input", () => {
+    filter.value = "All";
+    for (let key in tasks) {
+      tasks[key].forEach((item) => {
+        const task = document.getElementById(`${item.id}`);
+        if (task) task.remove();
+      });
+    }
+  
+    let i = 0;
+    for (let key in tasks) {
+      tasks[key].forEach((item) => {
+        if (item.name.toLowerCase().includes(search.value.toLowerCase()))
+          createTask(item.id, item.name, item.dueDate, item.priority, key, i);
+      });
+      i++;
+    }
+  }
   );
   
