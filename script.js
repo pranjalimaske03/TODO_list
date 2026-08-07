@@ -6,10 +6,10 @@ let tasks = {
   };
   
   let form = document.getElementById("task-form");
-  let todo = document.getElementById("todo");
-  let started = document.getElementById("started");
-  let completed = document.getElementById("completed");
-  let dropText = document.getElementsByClassName("drop-text");
+  // let todo = document.getElementById("todo");
+  // let started = document.getElementById("started");
+  // let completed = document.getElementById("completed");
+  // let dropText = document.getElementsByClassName("drop-text");
   
   let id = 1;
   
