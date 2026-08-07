@@ -332,8 +332,8 @@ let tasks = {
   // Filtering data based on Search query.
   
   const search = document.getElementById("search-input");
-  
-  // Function for showing the tasks according to the search query.
+
+    // Function for showing the tasks according to the search query.
   search.addEventListener("input", () => {
     filter.value = "All";
     for (let key in tasks) {
@@ -351,5 +351,6 @@ let tasks = {
       });
       i++;
     }
-  });
+  }
+  );
   
